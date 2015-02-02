@@ -50,7 +50,9 @@ STATE|STUSAB|STATE_NAME|STATENS
 54|WV|West Virginia|01779805
 55|WI|Wisconsin|01779806
 56|WY|Wyoming|01779807
+59|BI|Bureau of Indian Education|
 60|AS|American Samoa|01802701
+63|AE|Department of Defense Education Activity|
 66|GU|Guam|01802705
 69|MP|Northern Mariana Islands|01779809
 72|PR|Puerto Rico|01779808

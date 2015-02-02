@@ -69,7 +69,7 @@ describe AnsiCodes::State do
 
   describe '.all' do
     it 'should return 57 elements' do
-      AnsiCodes::State.all.should have(57).items
+      AnsiCodes::State.all.should have(59).items
     end
 
     it 'should return an array' do
