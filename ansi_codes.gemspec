@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ansi_codes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "commom_core_ansi_codes"
+  spec.name          = "ansi_codes"
   spec.version       = AnsiCodes::VERSION
   spec.authors       = ["Keith Layne"]
   spec.email         = ["keith@laynes.org"]
