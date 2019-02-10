@@ -51,7 +51,7 @@ module AnsiCodes
     # @raise [RuntimeError] if no associated {State} is found
     def self.find(value)
       case value
-      when Fixnum
+      when Integer
         value = '%02d' % value
         selector = :ansi_code
       when String

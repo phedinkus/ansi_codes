@@ -26,7 +26,7 @@ describe AnsiCodes::State do
   describe '#name' do
     it 'should return a string longer than 2 characters' do
       AnsiCodes::State.all.each do |state|
-        state.name.should have_at_least(3).items
+        expect(state.name.length).to be >= 3
       end
     end
 
@@ -69,7 +69,7 @@ describe AnsiCodes::State do
 
   describe '.all' do
     it 'should return 57 elements' do
-      AnsiCodes::State.all.should have(59).items
+      expect(AnsiCodes::State.all.size).to eq(59)
     end
 
     it 'should return an array' do

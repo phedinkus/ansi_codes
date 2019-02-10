@@ -32,7 +32,7 @@ describe AnsiCodes::County do
     end
 
     it 'should be at least 4 characters long' do
-      @names.each {|name| name.should have_at_least(4).items}
+      @names.each { |name| expect(name.length).to be >= 4 }
     end
 
     it 'should return the same county when looked up by result' do
@@ -51,7 +51,7 @@ describe AnsiCodes::County do
 
     it 'should be no longer than #name' do
       AnsiCodes::County.all.each do |county|
-        county.short_name.should have_at_most(county.name.size).characters
+        expect(county.short_name.length).to be <= county.name.size
       end
     end
   end
@@ -65,7 +65,7 @@ describe AnsiCodes::County do
 
     it 'should be shorter than #name' do
       AnsiCodes::County.all.each do |county|
-        county.designation.should have_at_most(county.name.size - 1).characters
+        expect(county.designation.length).to be <= (county.name.size - 1)
       end
     end
   end
@@ -80,7 +80,7 @@ describe AnsiCodes::County do
 
   describe '.all' do
     it 'should return 3235 elements' do
-      AnsiCodes::County.all.should have(3235).items
+      expect(AnsiCodes::County.all.size).to eq(3235)
     end
 
     it 'should return an array of AnsiCodes::County' do
